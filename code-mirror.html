@@ -12,7 +12,7 @@ license that can be found in the LICENSE file.
 <script src="codemirror-3.14/mode/vbscript/vbscript.js"></script>
 <script src="codemirror-3.14/mode/htmlmixed/htmlmixed.js"></script>
 
-<polymer-element name="code-mirror">
+<polymer-element name="code-mirror" attributes="value">
   <template>
     <link rel="stylesheet" href="codemirror-3.14/lib/codemirror.css">
     <link href="codemirror-3.14/theme/ambiance.css" rel="stylesheet" />
@@ -32,7 +32,7 @@ license that can be found in the LICENSE file.
       skin: '',
       ready: function() {
         this.mirror = CodeMirror(this.shadowRoot, {
-          value: "<polymer-element name=\"my-element\">\n\t<template></template>\n\t<script>\n\t\tPolymer('my-element', {\n\t\t});\n\t</scr" + 'ipt>\n</polymer-element>',
+          value: this.textContent,
           mode: 'htmlmixed',
           //theme: "solarized light",
           theme: 'ambiance',
@@ -42,6 +42,9 @@ license that can be found in the LICENSE file.
       },
       refresh: function() {
         this.mirror.refresh();
+      },
+      valueChanged: function() {
+        this.mirror.setValue(this.value);
       }
     });
   </script>
