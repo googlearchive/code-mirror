@@ -57,12 +57,16 @@ license that can be found in the LICENSE file.
           tabSize: this.tabSize,
           lineNumbers: this.lineNumbers
         });
+        
+        this.mirror.on('change', this.mirrorChanged.bind(this));
       },
       refresh: function() {
         this.mirror.refresh();
       },
       valueChanged: function() {
-        this.mirror.setValue(this.value);
+        if (this.value != this.mirror.getValue()) {
+          this.mirror.setValue(this.value);
+        }
       },
       modeChanged: function() {
         this.mirror.setOption('mode', this.mode);
@@ -75,6 +79,9 @@ license that can be found in the LICENSE file.
       },
       lineNumbersChanged: function() {
         this.mirror.setOption('lineNumbers', this.lineNumbers);
+      },
+      mirrorChanged: function() {
+        this.value = this.mirror.getValue();
       }
     });
   </script>
