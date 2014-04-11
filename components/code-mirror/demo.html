@@ -12,13 +12,21 @@ license that can be found in the LICENSE file.
   <link rel="import" href="code-mirror.html">
   <style>
     body {
-      position: relative;
-      height: 500px;
-      width: 500px;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    code-mirror {
+      height: 100%;
+      width: 100%;
     }
   </style>
 </head>
-<body>
+<body unresolved>
 <code-mirror>function test() {
   var x = true;
 }</code-mirror>

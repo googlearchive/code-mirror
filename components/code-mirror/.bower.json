@@ -5,14 +5,13 @@
     "polymer": "Polymer/polymer#master"
   },
   "homepage": "https://github.com/Polymer/code-mirror",
-  "_release": "27b443b2b2",
+  "_release": "49906f60c5",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "27b443b2b20cfc3e3648cfa53d2d4ec8ebb0aa03"
+    "commit": "49906f60c5c0a0a26fb7d21121a566d7da49dada"
   },
   "_source": "git://github.com/Polymer/code-mirror.git",
   "_target": "master",
-  "_originalSource": "Polymer/code-mirror",
-  "_direct": true
+  "_originalSource": "Polymer/code-mirror"
 }
