@@ -2,14 +2,14 @@
   "name": "code-mirror",
   "private": true,
   "dependencies": {
-    "polymer": "Polymer/polymer#master"
+    "polymer": "Polymer/polymer#>=0.3.0 <1.0.0"
   },
   "homepage": "https://github.com/Polymer/code-mirror",
-  "_release": "49906f60c5",
+  "_release": "0dddf7aca5",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "49906f60c5c0a0a26fb7d21121a566d7da49dada"
+    "commit": "0dddf7aca55bf477c8197d1a51aeaa173c9f2ed0"
   },
   "_source": "git://github.com/Polymer/code-mirror.git",
   "_target": "master",
